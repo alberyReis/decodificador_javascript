@@ -1,0 +1,87 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    color: #D6D58E;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background: #042940;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.decodificador {
+    margin: 20px;
+    height: 90%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.decodificador .input_text {
+    margin: auto;
+    width: 90%;
+    height: 50%;
+    padding-left: 20px;
+    font-size: 1.5em;
+    border-radius: 50px;
+    border: none;
+    color: #D6D58E;
+}
+
+.decodificador .buttons {
+    text-align: center;
+    padding: 40px;
+}
+
+.buttons .button_crip, .buttons .button_desc, .button_resultado button {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 50px;
+    width: 40%;
+    font-size: 1em;
+    font-weight: bold;
+    background: #D6D58E;
+    box-shadow: 3px 3px 20px 2px #d6d58e53;
+    border: none;
+}
+
+.buttons .button_crip:hover, .buttons .button_desc:hover, .button_resultado button:hover {
+    background: #807f54;
+}
+
+.buttons .button_crip:active, .buttons .button_desc:active, .button_resultado button:active {
+    box-shadow: 5px 5px 20px 3px #d6d58e53;
+    border: 1px solid #00000089;
+}
+
+.resultado {
+    height: 90%;
+    width: 25%;
+    box-sizing: border-box;
+    margin: 20px;
+    border-radius: 20px;
+    background: #074369;
+    padding: 40px;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resultado h2 {
+    font-size: 1.6em;
+    line-height: 1.5em;text-align: center;
+    padding: 40px 0 40px 0;
+}
+
+.button_resultado button {
+    width: 90%;
+}
