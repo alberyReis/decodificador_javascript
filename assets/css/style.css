@@ -4,6 +4,7 @@ body {
     height: 100vh;
     width: 100vw;
     color: #D6D58E;
+    background: #042940;
 }
 
 main {
@@ -14,11 +15,10 @@ main {
     margin: auto;
     display: flex;
     gap: 10px;
-    padding: 20px;
+    padding: 50px;
 }
 
 .decodificador {
-    margin: 20px;
     height: 90%;
     width: 60%;
     display: flex;
@@ -27,7 +27,7 @@ main {
 
 .decodificador .input_text {
     margin: auto;
-    width: 90%;
+    width: 80%;
     height: 50%;
     padding-left: 20px;
     font-size: 1.5em;
@@ -41,7 +41,9 @@ main {
     padding: 40px;
 }
 
-.buttons .button_crip, .buttons .button_desc, .button_resultado button {
+.buttons .button_crip,
+.buttons .button_desc,
+.button_resultado button {
     padding: 20px;
     margin: 5px;
     border-radius: 50px;
@@ -53,11 +55,15 @@ main {
     border: none;
 }
 
-.buttons .button_crip:hover, .buttons .button_desc:hover, .button_resultado button:hover {
+.buttons .button_crip:hover,
+.buttons .button_desc:hover,
+.button_resultado button:hover {
     background: #807f54;
 }
 
-.buttons .button_crip:active, .buttons .button_desc:active, .button_resultado button:active {
+.buttons .button_crip:active,
+.buttons .button_desc:active,
+.button_resultado button:active {
     box-shadow: 5px 5px 20px 3px #d6d58e53;
     border: 1px solid #00000089;
 }
@@ -78,10 +84,116 @@ main {
 
 .resultado h2 {
     font-size: 1.6em;
-    line-height: 1.5em;text-align: center;
+    line-height: 1.5em;
+    text-align: center;
     padding: 40px 0 40px 0;
+}
+
+.resultado p {
+    font-size: 1em;
 }
 
 .button_resultado button {
     width: 90%;
+}
+
+@media (max-width: 991.98px) {
+    body {
+        height: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        padding: 40px 10px 40px 0;
+        margin: auto;
+    }
+
+    .decodificador {
+        margin: auto;
+        width: 100%;
+    }
+
+    .decodificador .input_text {
+        height: 600px;
+        font-size: 1.4em;
+    }
+
+    .buttons .button_crip,
+    .buttons .button_desc,
+    .button_resultado button {
+        font-size: 0.9em;
+    }
+
+    .resultado {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .resultado h1 {
+        padding: 10px;
+    }
+
+    .resultado h2 {
+        padding: 20px;
+        height: 500px;
+        font-size: 1.5em;
+    }
+
+    .resultado p {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .decodificador .input_text {
+        font-size: 1.3em;
+    }
+
+    .decodificador .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons .button_crip,
+    .buttons .button_desc,
+    .button_resultado button {
+        width: 100%;
+        margin: auto;
+        margin: 5px;
+        font-size: 0.8em;
+    }
+
+    .resultado h2 {
+        font-size: 1.4em;
+    }
+
+    .resultado p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .decodificador .input_text {
+        font-size: 1.2em;
+    }
+
+    .buttons .button_crip,
+    .buttons .button_desc,
+    .button_resultado button {
+        font-size: 0.7em;
+    }
+
+    .resultado h2 {
+        font-size: 1.3em;
+    }
+
+    .resultado p {
+        font-size: 0.7em;
+    }
 }
