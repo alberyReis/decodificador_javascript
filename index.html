@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,29 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Decodificador</title>
 </head>
+
 <body>
     <main>
         <section class="decodificador">
-            <input class="input_text" type="text" placeholder="Digite seu texto">
+            <img src="./assets/img/logo_transparent.png" alt="">
+            <input type="text" id="input_text" placeholder="Digite aqui...">
             <div class="buttons">
+                <p>Apenas letras minúsculas e sem acento.</p>
                 <input class="button_crip" type="submit" value="Criptografar">
                 <input class="button_desc" type="submit" value="Descriptografar">
             </div>
         </section>
         <section class="resultado">
-            <div class="texto_resultado">
+            <div id="container_resultado">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
             <div class="button_resultado">
-                <button>Copiar</button>
+                <button class="copiar">Copiar</button>
             </div>
         </section>
     </main>
-    <script src="assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
