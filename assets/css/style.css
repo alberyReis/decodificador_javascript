@@ -92,7 +92,7 @@ select:focus {
     box-sizing: border-box;
     margin: 20px;
     border-radius: 20px;
-    background: #2f074300;
+    background: #433277;
     padding: 40px;
     line-height: 1.5em;
     display: flex;
@@ -101,7 +101,7 @@ select:focus {
 }
 
 #texto_resultado {
-    background: #2f074300;
+    background: #433277;
     border: none;
     color: #D6D58E;
     font-size: 1.2em;
