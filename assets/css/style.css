@@ -4,13 +4,13 @@ body {
     height: 100vh;
     width: 100vw;
     color: #D6D58E;
-    background: #042940;
+    background: linear-gradient(to left, #41295a, #2f0743);
 }
 
 main {
     height: 100%;
     width: 100%;
-    background: #042940;
+    background: linear-gradient(to left, #41295a, #2f0743);
     max-width: 1400px;
     margin: auto;
     display: flex;
@@ -47,7 +47,7 @@ select:focus {
     border-radius: 50px;
     border: none;
     color: #D6D58E;
-    background: #042940;
+    background: #734d8700;
 }
 
 .decodificador .buttons {
@@ -92,7 +92,7 @@ select:focus {
     box-sizing: border-box;
     margin: 20px;
     border-radius: 20px;
-    background: #074369;
+    background: #2f074300;
     padding: 40px;
     line-height: 1.5em;
     display: flex;
@@ -101,7 +101,7 @@ select:focus {
 }
 
 #texto_resultado {
-    background: #074369;
+    background: #2f074300;
     border: none;
     color: #D6D58E;
     font-size: 1.2em;
