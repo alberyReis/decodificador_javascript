@@ -4,13 +4,13 @@ body {
     height: 100vh;
     width: 100vw;
     color: #D6D58E;
-    background: linear-gradient(to left, #41295a, #2f0743);
+    background: linear-gradient(to right, #032134, #042940);
 }
 
 main {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to left, #41295a, #2f0743);
+    background: linear-gradient(to left, #032134, #042940);
     max-width: 1400px;
     margin: auto;
     display: flex;
@@ -92,7 +92,7 @@ select:focus {
     box-sizing: border-box;
     margin: 20px;
     border-radius: 20px;
-    background: #433277;
+    background: #074369;
     padding: 40px;
     line-height: 1.5em;
     display: flex;
@@ -101,7 +101,7 @@ select:focus {
 }
 
 #texto_resultado {
-    background: #433277;
+    background: #074369;
     border: none;
     color: #D6D58E;
     font-size: 1.2em;
