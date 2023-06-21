@@ -8,14 +8,14 @@ const criptografar = () => {
     const inputCriptografar = input.value
     const textCriptografado = inputCriptografar.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
     containerResultado.innerHTML = ''
-    containerResultado.innerHTML = '<textarea name="" id="texto_resultado" readonly cols="18" rows="20">' + textCriptografado + '</textarea>'
+    containerResultado.innerHTML = '<textarea name="" id="texto_resultado" readonly cols="12" rows="20">' + textCriptografado + '</textarea>'
 }
 
 const descriptografar = () => {
     const inputDescriptografar = input.value;
     const textDescriptografado = inputDescriptografar.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u")
     containerResultado.innerHTML = ''
-    containerResultado.innerHTML = '<textarea name="" id="texto_resultado" readonly cols="18" rows="20">' + textDescriptografado + '</textarea>'
+    containerResultado.innerHTML = '<textarea name="" id="texto_resultado" readonly cols="12" rows="20">' + textDescriptografado + '</textarea>'
 }
 
 const copiar = () => {
